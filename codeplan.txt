@@ -1,8 +1,7 @@
 
 
-1. genTrackTVAll.m:Simulated list of (tau,v) tracks:
-    - getTrackKDE.m: Given input data list of lifetime, speed data points,generate KDE 
-    - getSimTrackTV.m: Pull n simulated (tau, v) tracks from KDE
+1. genSimTrackTS:Simulated list of (tau,s) tracks:
+    Use bootstrapping from all nascent ring tracks
 2. genTrackCoord.m: Generate spatiotemporal ground truth for each simulated track
 3. genTrackRingImage.m: Generate ring image for each track (all frames)
 4. genSimRingNoisy.m: Add all tracks, add cytoplasmic BG, add poisson noise.
