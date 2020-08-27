@@ -31,7 +31,9 @@ thetaStart=mod(thetaMid-(frMid-frStart)*dt*omega,2*pi);
 
 fr=[frStart:1:frEnd]';
 t=fr/dt;
-thetaRaw=[thetaStart:dTheta:thetaStart+dTheta*(trackLenFr-1)]';
+%thetaRaw=[thetaStart:dTheta:thetaStart+dTheta*(trackLenFr-1)]';
+nPt=numel(fr);
+thetaRaw=[thetaStart+(0:nPt-1)*dTheta]';
 theta=mod(thetaRaw,2*pi);
 x=cos(theta)*diam/2;
 y=sin(theta)*diam/2;
@@ -42,3 +44,4 @@ trackCoord.t=t;
 trackCoord.theta=theta;
 trackCoord.x=x;
 trackCoord.y=y;
+
