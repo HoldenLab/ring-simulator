@@ -9,9 +9,11 @@ function trackCoord=genTrackCoord(tau,s,diam,dt,nFr)
 %dt: frame interval
 %nFr, number of frames
 
+%randomize velocity as +/- based on speed
+v=s*(2*randi([0 1])-1);
 
 %angular velocity omega=v/r
-omega=2*s/diam;
+omega=2*v/diam;
 dTheta=omega*dt;
 
 %need to generate
