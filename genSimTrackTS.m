@@ -5,6 +5,6 @@ function trackBootstrapped=genSimTrackTS(trackTable,nTrackKymoAvg)
 
 nTrackData=size(trackTable,1);
 nId=poissrnd(nTrackKymoAvg);
-bootId=randi(nTrackData,nId,1)
+bootId=randi(nTrackData,nId,1);
 trackBootstrapped=trackTable(bootId,:);
 

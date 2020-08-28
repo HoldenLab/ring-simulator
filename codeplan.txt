@@ -5,7 +5,7 @@
 2. genTrackCoord.m: Generate spatiotemporal ground truth for each simulated track
 3. genTrackRingImage.m: Generate ring image for each track (all frames)
 4. genAllTrackImage.m: Generate all tracks, no noise
-4. addSimRingNoise.m: Add all tracks, add cytoplasmic BG, add poisson noise.
+4. addCMOSnoise.m: Add all tracks, add cytoplasmic BG, add poisson noise.
 
 
 With appropriate loops around above functions
