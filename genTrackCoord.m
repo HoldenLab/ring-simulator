@@ -1,4 +1,4 @@
-function trackCoord=genTrackCoord(tau,s,diam,dt,nFr)
+function [trackCoord, thetaStart]=genTrackCoord(tau,s,diam,dt,nFr)
 %simulate a constant speed track arounda circle
 %output is a table
 %all spatial units in nm
