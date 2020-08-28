@@ -1,7 +1,7 @@
 serverDir='Z:\Shared\data\Holden-Seamus\200828_zdynamic_simulations';
 load("nascentTrackData.mat","T","S","Diam","nascentTracks");
 
-nRepeat=2;
+nRepeat=100;
 
 simPar.diam=880;
 simPar.nFr=120;
