@@ -16,7 +16,4 @@ nTrackAvg=6;
 [simRingStack groundTruth]= simulateVerciniDynamics(nascentTracks,nTrackAvg,simPar);
 tiffwrite('testSimRing6trackAvg.tif',simRingStack);
 
-savePath='analysed';
-saveName='testSimRing6trackAvg';
-nRepeat=2;
-batchVerciniSimulator(savePath, saveName,nRepeat,nascentTracks,nTrackAvg,simPar);
+savePath, saveName
