@@ -24,7 +24,6 @@ simParDefault.imSizePix=60;
 simParDefault.FWHMPSFnm=300; %approx PSF size measured ages ago on beads 
 simParDefault.filamentSznm=150;
 simParDefault.filamentIntensity=525;
-simParDefault.nTrackKymo=6;
 simParDefault.cameraGain=0.65;
 simParDefault.cameraRmsNoise=1.7;
 DEFAULT_RING_BG_FNAME='ringBG_avgpar.mat';
@@ -49,7 +48,7 @@ if ~exist('ringBackgroudIm')
     ringBackgroudIm=F_ringBG;
 end
 
-trackBootstrapped=genSimTrackTS(trackDynamicSeedTable,simPar.nTrackKymo);
+trackBootstrapped=genSimTrackTS(trackDynamicSeedTable,nTrackAvg);
 groundTruth.trackTable= trackBootstrapped;
 
 FWHM_Znm=sqrt(simPar.FWHMPSFnm^2+simPar.filamentSznm^2);
