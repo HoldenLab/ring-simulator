@@ -1,4 +1,5 @@
-serverDir='Z:\Shared\data\Holden-Seamus\200828_zdynamic_simulations';
+%serverDir='Z:\Shared\data\Holden-Seamus\200828_zdynamic_simulations';
+serverDir='D:\z dynamics paper\nascent_zdynamic_sim';
 load("nascentTrackData.mat","T","S","Diam","nascentTracks");
 
 nRepeat=100;
