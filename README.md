@@ -9,3 +9,5 @@ This simulator is primarily made available for reproducibility purposes, however
 To reproduce Whitley 2020 simulations, add ring-simulator folder to MATLAB path, and run nascent_zdynamic_sim.m to generate simulations corresponding to Supplementary Figure 20 data.
 
  .\testing is lots of internal tests to confirm validity of simulator
+ 
+[![DOI](https://zenodo.org/badge/290451974.svg)](https://zenodo.org/badge/latestdoi/290451974)
